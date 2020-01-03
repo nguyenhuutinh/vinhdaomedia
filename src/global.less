@@ -1,0 +1,83 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+@font-face {
+  font-weight: normal;
+  font-family: 'FSDiavloBold';
+  font-style: normal;
+  src: url('/fonts/FSDiavloBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'FSDiavloMedium';
+  font-style: normal;
+  src: url('/fonts/FSDiavloMedium.ttf') format('truetype');
+  font-display: swap;
+}
+
+
+@font-face {
+  font-weight: normal;
+  font-family: 'FSDiavloRegular';
+  font-style: normal;
+  src: url('/fonts/FSDiavloBook.ttf') format('truetype');
+  font-display: swap;
+}
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+a{
+  color: white;
+  &:hover{
+    color: wheat;
+  }
+}
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'FSDiavloRegular';
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}

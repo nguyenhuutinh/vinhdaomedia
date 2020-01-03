@@ -1,0 +1,126 @@
+@import '~antd/lib/style/themes/default.less';
+
+.header {
+	position: relative;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	display: flex;
+	// justify-content: space-between;
+	// background-color: #012b1e;
+	.logo {
+		margin-left: 80px;
+		padding: 20px;
+		img{
+			width: 60px;
+			height: 60px;
+		}
+		z-index: 12;
+	}
+
+	.menu {
+		// background-color: #012b1e;
+		// z-index: 12;
+		padding-left: 20px;
+		color: white;
+		display: flex;
+		
+		padding-right: 20px;
+		.menuItem {
+			padding: 10px;
+			font-size: 18px;
+			line-height: 80px;
+		}
+	}
+
+	.spaceLine {
+		background-color: white;
+		height: 1px;
+		opacity: 0.1;
+		margin-top: 0px;
+		width: 100%;
+		position: absolute;
+		top: 40px;
+		z-index: 11;
+	}
+}
+
+.col{
+	margin: 20px
+}
+.item1{
+	width: 100%;
+	height: 100%;
+}
+.catTitle{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #a5a5a544;
+	cursor: pointer;
+	&:hover{
+		background-color: rgba(255, 255, 255, 0);
+	}
+	div{
+		margin: 0 auto;
+		margin-top: 25%;
+		font-family: Arial, Helvetica, sans-serif;
+		width: 300px;
+		text-align: center;
+		color: white;
+		font-size: 2em;
+		
+	}
+
+}
+.icon1{
+	width: 100px;
+	margin: 0 auto;
+	display: block;	
+	height: auto;
+}
+.stepTitle{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	cursor: pointer;
+	div{
+		margin: 0 auto;
+		margin-top: 25%;
+		font-family: Arial, Helvetica, sans-serif;
+		width: 300px;
+		text-align: center;
+		color: black;
+		font-size: 2em;
+		
+	}
+
+}
+.footer {
+	margin: 50px;
+	// display: flex;
+	// justify-content: space-between;
+	.left {
+		color: #012b1e;
+		h2 {
+			color: #012b1e;
+			font-family: 'FSDiavloBold';
+			// line-height: 16px;
+		}
+	}
+	.right {
+		a {
+			color: #012b1e;
+			&:hover {
+				color: #194d3c;
+			}
+		}
+		display: flex;
+		flex-direction: column;
+	}
+}
